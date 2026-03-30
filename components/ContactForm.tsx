@@ -23,7 +23,7 @@ export default function ContactForm() {
       `Name: ${fields.name}\nEmail: ${fields.email}\n\n${fields.message}`
     )
     const subjectLine = encodeURIComponent(`[Connectum Labs] ${subjectLabel}`)
-    window.location.href = `mailto:hello@connectumlabs.com.au?subject=${subjectLine}&body=${body}`
+    window.location.href = `mailto:hello@connectumlabs.com?subject=${subjectLine}&body=${body}`
   }
 
   const inputClass =
@@ -98,8 +98,8 @@ export default function ContactForm() {
       </button>
       <p className="text-[0.7rem] text-mid font-light text-center">
         Opens your mail client · Alternatively email us directly at{' '}
-        <a href="mailto:hello@connectumlabs.com.au" className="text-accent hover:underline">
-          hello@connectumlabs.com.au
+        <a href="mailto:hello@connectumlabs.com" className="text-accent hover:underline">
+          hello@connectumlabs.com
         </a>
       </p>
     </form>

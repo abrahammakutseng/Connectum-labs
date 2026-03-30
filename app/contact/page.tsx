@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const contactDetails = [
   { label: 'Entity',    value: 'Connectum Labs Pty Ltd' },
   { label: 'Location',  value: 'Brisbane, Queensland, Australia' },
-  { label: 'Email',     value: 'hello@connectumlabs.com.au', href: 'mailto:hello@connectumlabs.com.au' },
+  { label: 'Email',     value: 'hello@connectumlabs.com', href: 'mailto:hello@connectumlabs.com' },
   { label: 'AImpact',   value: 'aimpactagency.com.au', href: 'https://aimpactagency.com.au' },
 ]
 
@@ -53,8 +53,8 @@ export default function ContactPage() {
               <p className="text-ink text-sm font-light leading-relaxed">
                 We typically respond to enquiries within 1–2 business days. For urgent matters, email us directly
                 at{' '}
-                <a href="mailto:hello@connectumlabs.com.au" className="text-accent hover:underline">
-                  hello@connectumlabs.com.au
+                <a href="mailto:hello@connectumlabs.com" className="text-accent hover:underline">
+                  hello@connectumlabs.com
                 </a>.
               </p>
             </div>

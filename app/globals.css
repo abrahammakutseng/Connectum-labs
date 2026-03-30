@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #f5f2ec;
+    color: #0d0d0d;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background: #1a4d3e;
+    color: #f5f2ec;
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply font-mono text-[0.68rem] tracking-[0.18em] uppercase text-accent;
+  }
+
+  .section-label {
+    @apply font-mono text-[0.68rem] tracking-[0.2em] uppercase text-mid mb-10;
+  }
+
+  .section-label::before {
+    content: '—  ';
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-accent text-paper px-5 py-3 text-sm font-medium rounded
+      hover:bg-accent-lt transition-colors duration-200;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 border border-accent text-accent px-5 py-3 text-sm font-medium rounded
+      hover:bg-accent hover:text-paper transition-colors duration-200;
+  }
+}

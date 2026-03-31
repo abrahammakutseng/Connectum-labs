@@ -34,7 +34,7 @@ const credibilityItems = [
   { label: 'Entity',       value: 'Connectum Labs Pty Ltd' },
   { label: 'Type',         value: 'Technology Holding Company' },
   { label: 'Incorporated', value: 'Queensland, Australia' },
-  { label: 'Active since', value: '2024' },
+  { label: 'Active since', value: '2025' },
 ]
 
 export default function HomePage() {
